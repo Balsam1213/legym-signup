@@ -1,0 +1,39 @@
+{
+  "phone": "在此填入乐健登录手机号",
+  "password": "在此填入乐健登录密码",
+  "targets": [
+    {
+      "name": "周四健身跑（周日开报）",
+      "activity_keywords": ["健身跑-周四-犀浦南区"],
+      "start_time_hhmm": "19:00",
+      "open_day": "SUN",
+      "open_time": "06:30",
+      "start_hammer_seconds_before": 3,
+      "give_up_time": "06:35",
+      "hammer_interval_seconds": 0.45
+    },
+    {
+      "name": "周一飞盘（周四开报）",
+      "activity_keywords": ["飞盘超市-周一-犀浦"],
+      "start_time_hhmm": "18:00",
+      "open_day": "THU",
+      "open_time": "06:30",
+      "start_hammer_seconds_before": 3,
+      "give_up_time": "06:35",
+      "hammer_interval_seconds": 0.45
+    }
+  ],
+  "pushplus_token": "",
+  "pushplus_topic": "",
+  "_说明": {
+    "phone": "乐健登录手机号",
+    "password": "乐健登录密码",
+    "targets": "目标活动列表。open_day=报名开放日(SUN/THU/...)，即『今天星期几』决定执行哪个目标；open_time 依据提前4天规则自动对应活动日（周日报周四活动，周四报周一活动）",
+    "activity_keywords": "活动名需包含的每个关键词（全匹配）。同报名窗多场用 start_time_hhmm（活动开始时刻 HH:MM）精确锁定",
+    "start_hammer_seconds_before": "开放前多少秒开始提交（3 → 06:29:57 起持续连发）",
+    "give_up_time": "超过该时刻仍未成功则放弃",
+    "hammer_interval_seconds": "报名重试间隔（秒），约2次/秒",
+    "pushplus_token": "PushPlus www.pushplus.plus 微信登录后复制 token；留空则不推送",
+    "pushplus_topic": "PushPlus 群组编码，单人推送留空"
+  }
+}

@@ -1,0 +1,21 @@
+# ===== 敏感数据:绝不入库 =====
+# 含登录手机号+密码的配置
+config.json
+# 含 accessToken/refreshToken 的会话缓存
+session.json
+
+# ===== 运行时产物 =====
+logs/
+run.out
+__pycache__/
+*.pyc
+
+# ===== 会话工具数据 =====
+.zcode/
+
+# ===== 历史大文件(apk/frida二进制/dex等,统一归档不入库) =====
+archive/
+
+# ===== 系统杂物 =====
+Thumbs.db
+desktop.ini
