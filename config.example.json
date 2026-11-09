@@ -30,6 +30,7 @@
     "password": "乐健登录密码",
     "targets": "目标活动列表。open_day=报名开放日(SUN/THU/...)，即『今天星期几』决定执行哪个目标；open_time 依据提前4天规则自动对应活动日（周日报周四活动，周四报周一活动）",
     "activity_keywords": "活动名需包含的每个关键词（全匹配）。同报名窗多场用 start_time_hhmm（活动开始时刻 HH:MM）精确锁定",
+    "address_keywords": "可选：同报名窗同名多场次时用地点关键词过滤（如 [\"犀浦南区\"]）。缺省时若仍命中多个候选 → '需人工确认'（日志+推送提醒，不自动选）",
     "start_hammer_seconds_before": "开放前多少秒开始提交（3 → 06:29:57 起持续连发）",
     "give_up_time": "超过该时刻仍未成功则放弃",
     "hammer_interval_seconds": "报名重试间隔（秒），约2次/秒",
