@@ -13,8 +13,8 @@
       "hammer_interval_seconds": 0.45
     },
     {
-      "name": "周一飞盘（周四开报）",
-      "activity_keywords": ["飞盘超市-周一-犀浦"],
+      "name": "周一篮球（周四开报）",
+      "activity_keywords": ["篮球超市-周一-犀浦-张立新"],
       "start_time_hhmm": "18:00",
       "open_day": "THU",
       "open_time": "06:30",
