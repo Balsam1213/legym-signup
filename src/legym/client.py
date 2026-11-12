@@ -50,7 +50,10 @@ class LegymClient:
 
     # ---------- 内部 ----------
     def _headers(self, extra=None):
-        h = {"Authorization": "Bearer %s" % (self.token or "")}
+        # 网关已拒绝空 Bearer 头（登录接口 401 invalid_token），未登录时不带该头
+        h = {}
+        if self.token:
+            h["Authorization"] = "Bearer %s" % self.token
         if extra:
             h.update(extra)
         return h
